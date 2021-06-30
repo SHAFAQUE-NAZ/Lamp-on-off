@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  media="screen and (max-width: 951px)" href="phone.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>LightOn</title>
+
+</head>
+<body>
+    
+        
+        <img src="img/Black.jpg"  id="myImg" value="ON">
+        <input onclick="change()" type="button" value="ON" id="myButton1"></input>
+
+   
+
+    <script>
+        function change() 
+{
+    var elem = document.getElementById("myButton1");
+    let image = document.getElementById("myImg")
+    if (elem.value=="ON"){
+        
+        image.src = 'img/lamp4.jpg';
+        elem.value = "OFF";
+    }
+    else {
+        image.src = 'img/Black.jpg'
+        
+        elem.value = "ON";
+    }
+    
+    // document.getElementById("container").innerHTML="";
+
+    
+}
+    </script>
+</body>
+</html>
